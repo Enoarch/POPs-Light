@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	  <meta charset="utf-8">
+	  <title>POP Test Page</title>
+	  <link rel="stylesheet" href="style/POPsLight.css">
+	  <link rel="stylesheet" href="style/jquery-ui.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet"> 
+	  <script src="src/jquery.min.js"></script>
+      <script src="src/jquery-ui.min.js"></script>  
+	  <style>
+	  		/*CSS INDEX PAGE*/
+	  		body,html{margin:0;padding:0;}
+			body{background-color:white;}
+			a {font-weight:bold;color:white;font-family:arial;font-size:24px;margin-left:20px;}
+			header{font-family: 'Sansita', sans-serif;}
+			header #popSTitle{font-size:75px;text-shadow:1px 1px #31B404}
+			header #subPopSTitle{position:relative;top:-55px;text-decoration:underline;}
+			header ul{padding:0;margin:0;margin-top:40px;}
+			header{text-align:center;}
+			header ul li{
+				display:inline-block;
+				transition:all 0.5s;-webkit-transition:all 0.5s;
+				width:230px;
+				font-size:24px;
+				padding:10px 5px;
+				background:#97BBF7;
+			}
+			header ul li span{color:white;font-style:bold;margin-right:10px;transition:all 0.5s;-webkit-transition:all 0.5s;}
+			header ul li:hover{box-shadow:0 0 5px black;}
+			header ul li:hover span{color:green;}
+			header ul li:first-child{border-radius:7px 0 0 7px;}
+			header ul li:last-child{border-radius:0 7px 7px 0;}
+	  </style>
+	</head>
+	<body>
+
+		<header>
+			<h1 id='popSTitle'>POPs Light</h1>
+			<h2 id='subPopSTitle'>A JQuery plugin for Popups</h2>
+			<ul>
+				<li id='launcher1'><span>></span> #ABEBC6 / #1D8348</li>
+				<li id='launcher2'><span>></span> #D8D8D8 / #585858</li>
+				<li id='launcher3'><span>></span> #F8E0E6 / #F7819F</li>
+				<li id='launcher4'><span>></span> #F6E3CE / #0A2A0A</li>
+			</ul>
+		</header>
+		<div class='popup'>	
+			<div id='pop1'></div>
+			<div id='pop2'></div>
+			<div id='pop3'></div>
+			<div id='pop4'></div>
+		</div>
+
+		<script src="src/POPsLight.js"></script> 
+		<script>
+		    $('#pop1').myPOP(
+		    	{
+		    		"title":"POPs Light",
+		    		"eventObj":$("#launcher1"),
+		    		"color1":"#ABEBC6",
+		    		"color2":"#1D8348",
+		    		"width":"800px",
+		    		"height":"300px"
+		    	}
+		    );
+
+		    $('#pop2').myPOP(
+		    	{
+		    		"title":"POPs Light",
+		    		"eventObj":$("#launcher2"),
+		    		"color1":"#D8D8D8",
+		    		"color2":"#585858",
+		    		"width":"300px",
+		    		"height":"150px"
+		    	}
+		    );
+
+		    $('#pop3').myPOP(
+		    	{
+		    		"title":"POPs Light",
+		    		"eventObj":$("#launcher3"),
+		    		"color1":"#F8E0E6",
+		    		"color2": "#F7819F",
+		    		"width":"600px",
+		    		"height":"300px"
+		    	}
+		    );
+		    $('#pop4').myPOP(
+		    	{
+		    		"title":"POPs Light",
+		    		"eventObj":$("#launcher4"),
+		    		"color1":"#088A4B",
+		    		"color2": "#0A2A0A",
+		    		"width":"600px",
+		    		"height":"300px"
+		    	}
+		    );
+		</script>
+	</body> 
+</html>
