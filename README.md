@@ -7,7 +7,7 @@ You can use this plugin to create custom popups
 To use it, it's easy :
 
 In the HTML code : 
-`<div id="pop"> Hey, it's a Popup</div>` 
+  <div id="pop"> Hey, it's a Popup</div>
 
 In the js file : 
 
