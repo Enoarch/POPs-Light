@@ -2,9 +2,14 @@
  
 A light version of POPs Jquery plugin  
 You can use this plugin to create custom popups 
+
+## Downloads
+
+You have to download POPsLight.js and POPsLight.css (and jquery, jquery UI)
+
 ## Usage
 
-To use it, it's easy : 
+To use it, it's easy !  
   In the HTML code :
   ```html
     <div id='launcher'> Click me to Show popup</div>
