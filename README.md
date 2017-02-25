@@ -7,14 +7,15 @@ A light version of POPs Jquery plugin
 To use it, it's easy : 
   In the HTML code :
   ```html
-    <div id='popup'></div>
+    <div id='launcher'> Click me to Show popup</div>
+    <div id='popup'> Hey it's a popup</div>
   ```
   
   And in the js file : 
 ```js
-$('#pop1').myPOP({  
+$('#popup').myPOP({  
   "title":"POPs Light", //title of the popup  
-  "eventObj":$("#launcher1"),//Trigger to show popup  
+  "eventObj":$("#launcher"),//Trigger to show popup  
   "color1":"#ABEBC6",//Color of popups background  
   "color2":"#1D8348", //Color of popups'header
   "width":"800px",  
