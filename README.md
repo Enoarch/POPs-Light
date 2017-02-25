@@ -4,9 +4,13 @@ A light version of POPs Jquery plugin
 # POPs-LightA light version of POPs Jquery plugin You can use this plugin to create custom popups 
 ## Usage
 
-To use it, it's easy :
+To use it, it's easy : 
   In the HTML code :
+  ```html
+    <div id='popup'></div>
+  ```
   
+  And in the js file : 
 ```js
 $('#pop1').myPOP({  
   "title":"POPs Light", //title of the popup  
@@ -16,3 +20,4 @@ $('#pop1').myPOP({
   "width":"800px",  
   "height":"300px"
 });
+```
