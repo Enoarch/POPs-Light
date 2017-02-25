@@ -1,7 +1,7 @@
 # POPs-Light
-A light version of POPs Jquery plugin 
-
-# POPs-LightA light version of POPs Jquery plugin You can use this plugin to create custom popups 
+ 
+A light version of POPs Jquery plugin  
+You can use this plugin to create custom popups 
 ## Usage
 
 To use it, it's easy : 
